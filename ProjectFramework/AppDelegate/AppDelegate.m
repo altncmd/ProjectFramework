@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SMRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[SMRootViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    // Check the network if need
+//    [self checkNetwork];
     return YES;
+}
+
+- (void)checkNetwork {
+    NSString *tips = [SMNetworking getNetworkStatusTips];
+    if (tips.length) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:tips delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        [alertView show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [alertView dismissWithClickedButtonIndex:0 animated:YES];
+        });
+    }
 }
 
 

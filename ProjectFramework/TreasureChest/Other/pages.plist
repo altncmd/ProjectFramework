@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>SMOneViewController</string>
+		<key>navigationItemTitle</key>
+		<string>ONE</string>
+		<key>tabBarItemTitle</key>
+		<string>one</string>
+		<key>tabBarItemNormalImageName</key>
+		<string>one_sel</string>
+		<key>tabBarItemSelectedImageName</key>
+		<string>one_nor</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SMTwoViewController</string>
+		<key>navigationItemTitle</key>
+		<string>TWO</string>
+		<key>tabBarItemTitle</key>
+		<string>two</string>
+		<key>tabBarItemNormalImageName</key>
+		<string>two_sel</string>
+		<key>tabBarItemSelectedImageName</key>
+		<string>two_nor</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SMThreeViewController</string>
+		<key>navigationItemTitle</key>
+		<string>THREE</string>
+		<key>tabBarItemTitle</key>
+		<string>three</string>
+		<key>tabBarItemNormalImageName</key>
+		<string>three_sel</string>
+		<key>tabBarItemSelectedImageName</key>
+		<string>three_nor</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SMFourViewController</string>
+		<key>navigationItemTitle</key>
+		<string>FOUR</string>
+		<key>tabBarItemTitle</key>
+		<string>four</string>
+		<key>tabBarItemNormalImageName</key>
+		<string>four_sel</string>
+		<key>tabBarItemSelectedImageName</key>
+		<string>four_nor</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SMFiveViewController</string>
+		<key>navigationItemTitle</key>
+		<string>FIVE</string>
+		<key>tabBarItemTitle</key>
+		<string>five</string>
+		<key>tabBarItemNormalImageName</key>
+		<string>five_sel</string>
+		<key>tabBarItemSelectedImageName</key>
+		<string>five_nor</string>
+	</dict>
+</array>
+</plist>
