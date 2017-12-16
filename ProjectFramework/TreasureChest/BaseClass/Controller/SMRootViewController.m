@@ -24,7 +24,7 @@
     [self sm_addChildViewController:self.launchViewController];
     
     // 2.数秒后跳转到首页
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView beginAnimations:@"animation" context:nil];
         [UIView setAnimationDuration:0];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];

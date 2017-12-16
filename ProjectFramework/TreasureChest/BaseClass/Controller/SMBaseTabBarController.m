@@ -43,7 +43,7 @@
     // Do any additional setup after loading the view.
     self.delegate = self;
     
-    NSString *imageName = kScreenHeight == 812 ? @"tab_bar_for_iphoneX" : @"tab_bar";
+    NSString *imageName = kScreenHeight == 812 ? @"tab_bar_Bg_for_iPhoneX" : @"tab_bar_Bg";
     UIImage *image = [UIImage resizedImage:imageName];
     [[UITabBar appearance] setBackgroundImage:image];
     [UITabBar appearance].clipsToBounds = YES;

@@ -1,5 +1,5 @@
 //
-//  GeneralTools.h
+//  SMToolBox.h
 //  ProjectFramework
 //
 //  Created by Elroy on 8/22/17.
@@ -29,7 +29,7 @@
 // RGB color
 #define RGBColor(R, G, B, Alpha) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:(Alpha)]
 // Hex color
-#define HexColor(hex) [GeneralTools colorFromHexCode:hex]
+#define HexColor(hex) [SMToolBox colorFromHexCode:hex]
 // Random color
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0f];
 
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger, BorderStyle) {
     borderBottom        // bottom
 };
 
-@interface GeneralTools : NSObject
+@interface SMToolBox : NSObject
 
 #pragma mark - UILabel、UITextField单边框设置
 /**

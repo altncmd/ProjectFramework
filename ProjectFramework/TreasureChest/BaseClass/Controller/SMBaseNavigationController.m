@@ -24,7 +24,7 @@
      */
     
     UINavigationBar *bar = [UINavigationBar appearance];
-    NSString *imageName = kScreenHeight == 812 ? @"nav_bar_for_iphoneX" : @"nav_bar";
+    NSString *imageName = kScreenHeight == 812 ? @"nav_bar_Bg_for_iPhoneX" : @"nav_bar_Bg";
     UIImage *image = [UIImage resizedImage:imageName];
     [bar setBackgroundImage:image forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
     [bar setShadowImage:[[UIImage alloc] init]];
@@ -44,9 +44,12 @@
         
         // 自定义返回按钮
         UIButton *btn = [[UIButton alloc] init];
-        [btn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"back_28"] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        [btn sizeToFit];
+        btn.frame = CGRectMake(0, 0, 44, 44);
+//        [btn sizeToFit];
+        btn.imageEdgeInsets = UIEdgeInsetsMake(0, -35, 0, 0);
+//        btn.backgroundColor = [UIColor redColor];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
         
         // 如果自定义返回按钮后, 滑动返回可能失效, 需要添加下面的代码

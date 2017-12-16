@@ -56,14 +56,14 @@
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         // 设置时间格式
         [formatter setDateFormat:@"yyyyMMddHHmmss"];
-        NSString *dateString = [formatter stringFromDate:[NSDate date]];
-        NSString *fileName = [NSString  stringWithFormat:@"%@.jpg", dateString];
+//        NSString *dateString = [formatter stringFromDate:[NSDate date]];
+//        NSString *fileName = [NSString  stringWithFormat:@"%@.jpg", dateString];
         
-        if ([[GeneralTools UserDefaultGetObj:kUploadImageFlag] integerValue] == 0) {
+        if ([[SMToolBox UserDefaultGetObj:kUploadImageFlag] integerValue] == 0) {
             // 上传头像
 //            UIImage *image = [[SMDataBaseManager sharedDataBase] getAvatarImage];
 //            [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 1.0) name:@"file" fileName:fileName mimeType:@"image/jpeg"];
-        } else if ([[GeneralTools UserDefaultGetObj:kUploadImageFlag] integerValue] == 1) {
+        } else if ([[SMToolBox UserDefaultGetObj:kUploadImageFlag] integerValue] == 1) {
             // 上传封面图
 //            UIImage *image = [[SMDataBaseManager sharedDataBase] getcoverPhotoImage];
 //            [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 1.0) name:@"file" fileName:fileName mimeType:@"image/jpeg"];

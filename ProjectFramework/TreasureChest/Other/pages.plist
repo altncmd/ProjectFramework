@@ -8,11 +8,11 @@
 		<key>navigationItemTitle</key>
 		<string>ONE</string>
 		<key>tabBarItemTitle</key>
-		<string>one</string>
+		<string>首页</string>
 		<key>tabBarItemNormalImageName</key>
-		<string>one_sel</string>
+		<string>home_nor</string>
 		<key>tabBarItemSelectedImageName</key>
-		<string>one_nor</string>
+		<string>home_sel</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -20,11 +20,11 @@
 		<key>navigationItemTitle</key>
 		<string>TWO</string>
 		<key>tabBarItemTitle</key>
-		<string>two</string>
+		<string>发现</string>
 		<key>tabBarItemNormalImageName</key>
-		<string>two_sel</string>
+		<string>discover_nor</string>
 		<key>tabBarItemSelectedImageName</key>
-		<string>two_nor</string>
+		<string>discover_sel</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -32,11 +32,11 @@
 		<key>navigationItemTitle</key>
 		<string>THREE</string>
 		<key>tabBarItemTitle</key>
-		<string>three</string>
+		<string>新闻</string>
 		<key>tabBarItemNormalImageName</key>
-		<string>three_sel</string>
+		<string>new_nor</string>
 		<key>tabBarItemSelectedImageName</key>
-		<string>three_nor</string>
+		<string>new_sel</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -44,11 +44,11 @@
 		<key>navigationItemTitle</key>
 		<string>FOUR</string>
 		<key>tabBarItemTitle</key>
-		<string>four</string>
+		<string>乐趣</string>
 		<key>tabBarItemNormalImageName</key>
-		<string>four_sel</string>
+		<string>joy_nor</string>
 		<key>tabBarItemSelectedImageName</key>
-		<string>four_nor</string>
+		<string>joy_sel</string>
 	</dict>
 	<dict>
 		<key>className</key>
@@ -56,11 +56,11 @@
 		<key>navigationItemTitle</key>
 		<string>FIVE</string>
 		<key>tabBarItemTitle</key>
-		<string>five</string>
+		<string>我的</string>
 		<key>tabBarItemNormalImageName</key>
-		<string>five_sel</string>
+		<string>mine_nor</string>
 		<key>tabBarItemSelectedImageName</key>
-		<string>five_nor</string>
+		<string>mine_sel</string>
 	</dict>
 </array>
 </plist>

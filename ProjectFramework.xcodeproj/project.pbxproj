@@ -15,7 +15,7 @@
 		041F0C961FE11D44003ABFFE /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C7E1FE11D44003ABFFE /* SMAlertView.m */; };
 		041F0C971FE11D44003ABFFE /* SMPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C801FE11D44003ABFFE /* SMPickView.m */; };
 		041F0C981FE11D44003ABFFE /* SMDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C831FE11D44003ABFFE /* SMDataBaseManager.m */; };
-		041F0C991FE11D44003ABFFE /* GeneralTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C851FE11D44003ABFFE /* GeneralTools.m */; };
+		041F0C991FE11D44003ABFFE /* SMToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C851FE11D44003ABFFE /* SMToolBox.m */; };
 		041F0C9A1FE11D44003ABFFE /* SMBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C8C1FE11D44003ABFFE /* SMBaseTool.m */; };
 		041F0C9B1FE11D44003ABFFE /* SMHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C8E1FE11D44003ABFFE /* SMHttpTool.m */; };
 		041F0C9C1FE11D44003ABFFE /* SMNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F0C901FE11D44003ABFFE /* SMNetworking.m */; };
@@ -39,6 +39,8 @@
 		047C0CF61FE382CC0012E8CC /* SMThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CF51FE382CC0012E8CC /* SMThreeViewController.m */; };
 		047C0CF91FE382DA0012E8CC /* SMFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CF81FE382DA0012E8CC /* SMFourViewController.m */; };
 		047C0CFC1FE382E60012E8CC /* SMFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CFB1FE382E60012E8CC /* SMFiveViewController.m */; };
+		047C0D011FE3DBE70012E8CC /* SMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D001FE3DBE70012E8CC /* SMTestViewController.m */; };
+		047C0D041FE4B3A80012E8CC /* SMUIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D031FE4B3A80012E8CC /* SMUIFactory.m */; };
 		0490DB3C1FE13C90008F90E1 /* SMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490DB3B1FE13C90008F90E1 /* SMRootViewController.m */; };
 		0490DB3F1FE13CC0008F90E1 /* SMLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490DB3E1FE13CC0008F90E1 /* SMLaunchViewController.m */; };
 		22C4370C129AFB7ACDA2FB2F /* libPods-ProjectFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C51853D9270C7B1992BC1CA0 /* libPods-ProjectFramework.a */; };
@@ -78,8 +80,8 @@
 		041F0C801FE11D44003ABFFE /* SMPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPickView.m; sourceTree = "<group>"; };
 		041F0C821FE11D44003ABFFE /* SMDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDataBaseManager.h; sourceTree = "<group>"; };
 		041F0C831FE11D44003ABFFE /* SMDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDataBaseManager.m; sourceTree = "<group>"; };
-		041F0C841FE11D44003ABFFE /* GeneralTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralTools.h; sourceTree = "<group>"; };
-		041F0C851FE11D44003ABFFE /* GeneralTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralTools.m; sourceTree = "<group>"; };
+		041F0C841FE11D44003ABFFE /* SMToolBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMToolBox.h; sourceTree = "<group>"; };
+		041F0C851FE11D44003ABFFE /* SMToolBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMToolBox.m; sourceTree = "<group>"; };
 		041F0C871FE11D44003ABFFE /* AddressHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressHeader.h; sourceTree = "<group>"; };
 		041F0C881FE11D44003ABFFE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		041F0C8B1FE11D44003ABFFE /* SMBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBaseTool.h; sourceTree = "<group>"; };
@@ -127,6 +129,10 @@
 		047C0CF81FE382DA0012E8CC /* SMFourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFourViewController.m; sourceTree = "<group>"; };
 		047C0CFA1FE382E60012E8CC /* SMFiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFiveViewController.h; sourceTree = "<group>"; };
 		047C0CFB1FE382E60012E8CC /* SMFiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFiveViewController.m; sourceTree = "<group>"; };
+		047C0CFF1FE3DBE70012E8CC /* SMTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTestViewController.h; sourceTree = "<group>"; };
+		047C0D001FE3DBE70012E8CC /* SMTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTestViewController.m; sourceTree = "<group>"; };
+		047C0D021FE4B3A80012E8CC /* SMUIFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUIFactory.h; sourceTree = "<group>"; };
+		047C0D031FE4B3A80012E8CC /* SMUIFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMUIFactory.m; sourceTree = "<group>"; };
 		0490DB3A1FE13C90008F90E1 /* SMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMRootViewController.h; sourceTree = "<group>"; };
 		0490DB3B1FE13C90008F90E1 /* SMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMRootViewController.m; sourceTree = "<group>"; };
 		0490DB3D1FE13CC0008F90E1 /* SMLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMLaunchViewController.h; sourceTree = "<group>"; };
@@ -169,8 +175,8 @@
 				041F0C711FE11D44003ABFFE /* Category */,
 				041F0C7C1FE11D44003ABFFE /* CustomView */,
 				041F0C811FE11D44003ABFFE /* DataBase */,
-				041F0C841FE11D44003ABFFE /* GeneralTools.h */,
-				041F0C851FE11D44003ABFFE /* GeneralTools.m */,
+				041F0C841FE11D44003ABFFE /* SMToolBox.h */,
+				041F0C851FE11D44003ABFFE /* SMToolBox.m */,
 				041F0C861FE11D44003ABFFE /* Global */,
 				041F0C8A1FE11D44003ABFFE /* Networking */,
 				047C0CD01FE37FC30012E8CC /* Other */,
@@ -221,6 +227,8 @@
 		041F0C701FE11D44003ABFFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				047C0D021FE4B3A80012E8CC /* SMUIFactory.h */,
+				047C0D031FE4B3A80012E8CC /* SMUIFactory.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,11 +317,11 @@
 		043CB6101FE0E75200EE6EBB /* ProjectFramework */ = {
 			isa = PBXGroup;
 			children = (
-				047C0CFE1FE3851F0012E8CC /* Others */,
-				047C0CD51FE382260012E8CC /* Category */,
-				047C0CD61FE382260012E8CC /* Classes */,
-				047C0CD31FE382260012E8CC /* Resource */,
 				047C0CED1FE382340012E8CC /* AppDelegate */,
+				047C0CD61FE382260012E8CC /* Classes */,
+				047C0CD51FE382260012E8CC /* Category */,
+				047C0CD31FE382260012E8CC /* Resource */,
+				047C0CFE1FE3851F0012E8CC /* Others */,
 				041F0C6C1FE11D44003ABFFE /* TreasureChest */,
 			);
 			path = ProjectFramework;
@@ -453,6 +461,8 @@
 			children = (
 				047C0CEE1FE382AC0012E8CC /* SMOneViewController.h */,
 				047C0CEF1FE382AC0012E8CC /* SMOneViewController.m */,
+				047C0CFF1FE3DBE70012E8CC /* SMTestViewController.h */,
+				047C0D001FE3DBE70012E8CC /* SMTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -769,6 +779,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047C0D041FE4B3A80012E8CC /* SMUIFactory.m in Sources */,
 				041F0CAD1FE11E82003ABFFE /* SMBaseParam.m in Sources */,
 				041F0CA31FE11E71003ABFFE /* SMBaseViewController.m in Sources */,
 				047C0CFC1FE382E60012E8CC /* SMFiveViewController.m in Sources */,
@@ -777,11 +788,12 @@
 				041F0CA41FE11E71003ABFFE /* SMBaseTabBarController.m in Sources */,
 				041F0C9C1FE11D44003ABFFE /* SMNetworking.m in Sources */,
 				041F0C931FE11D44003ABFFE /* UIImage+Extension.m in Sources */,
-				041F0C991FE11D44003ABFFE /* GeneralTools.m in Sources */,
+				041F0C991FE11D44003ABFFE /* SMToolBox.m in Sources */,
 				041F0C921FE11D44003ABFFE /* UIDevice+Extension.m in Sources */,
 				041F0CA51FE11E71003ABFFE /* SMBaseNavigationController.m in Sources */,
 				047C0CF01FE382AC0012E8CC /* SMOneViewController.m in Sources */,
 				043CB6211FE0E75200EE6EBB /* main.m in Sources */,
+				047C0D011FE3DBE70012E8CC /* SMTestViewController.m in Sources */,
 				041F0C971FE11D44003ABFFE /* SMPickView.m in Sources */,
 				0490DB3F1FE13CC0008F90E1 /* SMLaunchViewController.m in Sources */,
 				041F0C981FE11D44003ABFFE /* SMDataBaseManager.m in Sources */,

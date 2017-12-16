@@ -1,22 +1,22 @@
 //
-//  GeneralTools.m
+//  SMToolBox.m
 //  ProjectFramework
 //
 //  Created by Elroy on 8/22/17.
 //  Copyright © 2017 钟世明. All rights reserved.
 //
 
-#import "GeneralTools.h"
+#import "SMToolBox.h"
 #import <CommonCrypto/CommonCrypto.h>
 
 
-@implementation GeneralTools
+@implementation SMToolBox
 
 + (void)setViewBorderStyleWithView:(UIView *)view onSide:(BorderStyle)side borderWidth:(float)width borderColor:(UIColor *)color {
     if (side == 0) {
         /******** 给视图设置部分边框线 *************/
         CALayer *topBorder = [CALayer layer];
-        float w =view.frame.size.width;
+        float w = view.frame.size.width;
         topBorder.frame = CGRectMake(0, 0, w, width);
         topBorder.backgroundColor = color.CGColor;
         [view.layer addSublayer:topBorder];
@@ -24,7 +24,7 @@
     } else if (side == 1) {
         /******** 给视图设置部分边框线 *************/
         CALayer *leftBorder = [CALayer layer];
-        float h =view.frame.size.height;
+        float h = view.frame.size.height;
         leftBorder.frame = CGRectMake(0, 0, width, h);
         leftBorder.backgroundColor = color.CGColor;
         [view.layer addSublayer:leftBorder];
@@ -233,7 +233,7 @@
         return image;
     }
     CGSize size = CGSizeMake(CGImageGetWidth(imgRef) * ratio, CGImageGetHeight(imgRef) * ratio); // 缩放后大小
-    return [GeneralTools image:image scaleToSize:size];
+    return [SMToolBox image:image scaleToSize:size];
 }
 
 #pragma mark - 添加水印
@@ -330,7 +330,7 @@
  */
 + (NSString *)pathDocumentsWithFileName:(NSString *)name
 {
-    return [[GeneralTools pathDocuments] stringByAppendingString:name];
+    return [[SMToolBox pathDocuments] stringByAppendingString:name];
 }
 
 /**
@@ -341,7 +341,7 @@
  */
 + (NSString *)pathCachesWithFileName:(NSString *)name
 {
-    return [[GeneralTools pathCaches] stringByAppendingString:name];
+    return [[SMToolBox pathCaches] stringByAppendingString:name];
 }
 
 #pragma mark - 文件操作
@@ -352,7 +352,7 @@
  */
 + (NSString *)calculateTheCacheSize {
     // TODO:这里的路径需要根据实际项目更改
-    NSString *path = [[GeneralTools pathDocuments] stringByAppendingPathComponent:@"grassroot.sqlite"];
+    NSString *path = [[SMToolBox pathDocuments] stringByAppendingPathComponent:@"grassroot.sqlite"];
     // 总大小
     unsigned long long size = 0;
     NSString *sizeText = nil;
@@ -509,7 +509,7 @@
         //（3）如果余数为0，校验位应为1，余数为1到10校验位应为字符串“0X98765432”(不包括分号)的第余数位的值（比如余数等于3，校验位应为9）
         //6. 出生年份的前两位必须是19或20
         number = [number stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        number = [GeneralTools filterSpecialString:number];
+        number = [SMToolBox filterSpecialString:number];
         //1⃣️判断位数
         if (number.length != 15 && number.length != 18) {
             return NO;
@@ -520,7 +520,7 @@
             //出生日期加上年的开头
             [mString insertString:@"19" atIndex:6];
             //最后一位加上校验码
-            [mString insertString:[GeneralTools getLastIdentifyNumberForIdentifyNumber:mString] atIndex:[mString length]];
+            [mString insertString:[SMToolBox getLastIdentifyNumberForIdentifyNumber:mString] atIndex:[mString length]];
             number = mString;
         }
         //3⃣️开始判断
@@ -540,7 +540,7 @@
             return NO;
         }
         //4⃣️验证校验码
-        return [[GeneralTools getLastIdentifyNumberForIdentifyNumber:number] isEqualToString:[number substringWithRange:NSMakeRange(17, 1)]];
+        return [[SMToolBox getLastIdentifyNumberForIdentifyNumber:number] isEqualToString:[number substringWithRange:NSMakeRange(17, 1)]];
     }
 }
 
@@ -553,8 +553,8 @@
  */
 + (NSString *)getGenderFromIdentityNumber:(NSString *)number
 {
-    if ([GeneralTools checkIdentityNumber:number]) {
-        number = [GeneralTools filterSpecialString:number];
+    if ([SMToolBox checkIdentityNumber:number]) {
+        number = [SMToolBox filterSpecialString:number];
         NSInteger i = [[number substringWithRange:NSMakeRange(number.length - 2, 1)] integerValue];
         if (i % 2 == 1) {
             return @"man";
@@ -575,8 +575,8 @@
  */
 + (NSString *)getBirthdayFromIdentityNumber:(NSString *)number
 {
-    if ([GeneralTools checkIdentityNumber:number]) {
-        number = [GeneralTools filterSpecialString:number];
+    if ([SMToolBox checkIdentityNumber:number]) {
+        number = [SMToolBox filterSpecialString:number];
         if (number.length == 18) {
             return [NSString stringWithFormat:@"%@年%@月%@日",[number substringWithRange:NSMakeRange(6,4)], [number substringWithRange:NSMakeRange(10,2)], [number substringWithRange:NSMakeRange(12,2)]];
         }
@@ -762,7 +762,7 @@
 }
 
 /**
- *  十六进制转NSData
+ *  Hex to NSData
  */
 + (NSData *)convertHexStrToData:(NSString *)str {
     if (!str || [str length] == 0) {
@@ -794,9 +794,9 @@
 }
 
 /**
- *  16进制数－>Byte数组
+ *  Hex to Byte array
  *
- *  @param hexString 传入的十六进制字符串
+ *  @param hexString Hex string
  *
  *  @return 返回转换好的数据，为NSData类型，因为无法直接返回字节数组；使用时需要把NSData类型再转换成Byte
  */
@@ -838,7 +838,7 @@
 
 
 /**
- *  NSData转十六进制
+ *  NSData to Hex
  */
 + (NSString *)convertDataToHexStr:(NSData *)data {
     if (!data || [data length] == 0) {
@@ -870,7 +870,7 @@
     byteData[1] = (integer & 0xff0000) >> 16;
     byteData[0] = (integer & 0xff000000) >> 24;
     NSData *result = [NSData dataWithBytes:byteData length:4];
-    SMLog(@"result=%@",result);
+//    SMLog(@"result=%@",result);
     return (NSData*)result;
 }
 

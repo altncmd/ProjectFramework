@@ -17,6 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIButton *btn = [SMUIFactory buttonWithTitle:@"button" titleFontSize:16 titleColor:[UIColor redColor]];
+    btn.backgroundColor = [UIColor greenColor];
+    [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(@0);
+        make.width.height.equalTo(@100);
+    }];
+    [self.view layoutIfNeeded];
+    
+}
+
+- (void)test {
+    [self showHint:@"Loading->Loading->Loading->Loading"];
 }
 
 - (void)didReceiveMemoryWarning {

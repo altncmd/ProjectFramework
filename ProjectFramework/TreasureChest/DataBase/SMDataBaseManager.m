@@ -49,7 +49,7 @@
 }
 
 - (NSString *)getDataBasePath {
-    NSString *path = [GeneralTools pathDocuments];
+    NSString *path = [SMToolBox pathDocuments];
     return [path stringByAppendingPathComponent:@"database.sqlite"];
 }
 

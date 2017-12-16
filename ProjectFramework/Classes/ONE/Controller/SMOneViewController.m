@@ -7,6 +7,7 @@
 //
 
 #import "SMOneViewController.h"
+#import "SMTestViewController.h"
 
 @interface SMOneViewController ()
 
@@ -17,6 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor blueColor];
+    button.center = self.view.center;
+    [button setTitle:@"TEST" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(@0);
+        make.width.height.equalTo(@100);
+    }];
+    [self.view layoutIfNeeded];
+}
+
+- (void)test {
+    SMTestViewController *test = [[SMTestViewController alloc] init];
+    [self.navigationController pushViewController:test animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
