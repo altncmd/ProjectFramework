@@ -21,7 +21,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor blueColor];
     button.center = self.view.center;
-    [button setTitle:@"TEST" forState:UIControlStateNormal];
+    [button setTitle:@"Push" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     [button mas_makeConstraints:^(MASConstraintMaker *make) {

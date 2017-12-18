@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIButton *btn = [SMUIFactory buttonWithTitle:@"button" titleFontSize:16 titleColor:[UIColor redColor]];
+    UIButton *btn = [SMUIFactory buttonWithTitle:@"Show hint" titleFontSize:16 titleColor:[UIColor redColor]];
     btn.backgroundColor = [UIColor greenColor];
     [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
@@ -31,7 +31,7 @@
 }
 
 - (void)test {
-    [self showHint:@"Loading->Loading->Loading->Loading"];
+    [self showHint:@"This is hint!"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -6,7 +6,7 @@
 		<key>className</key>
 		<string>SMOneViewController</string>
 		<key>navigationItemTitle</key>
-		<string>ONE</string>
+		<string>首页</string>
 		<key>tabBarItemTitle</key>
 		<string>首页</string>
 		<key>tabBarItemNormalImageName</key>
@@ -18,7 +18,7 @@
 		<key>className</key>
 		<string>SMTwoViewController</string>
 		<key>navigationItemTitle</key>
-		<string>TWO</string>
+		<string>发现</string>
 		<key>tabBarItemTitle</key>
 		<string>发现</string>
 		<key>tabBarItemNormalImageName</key>
@@ -30,7 +30,7 @@
 		<key>className</key>
 		<string>SMThreeViewController</string>
 		<key>navigationItemTitle</key>
-		<string>THREE</string>
+		<string>新闻</string>
 		<key>tabBarItemTitle</key>
 		<string>新闻</string>
 		<key>tabBarItemNormalImageName</key>
@@ -42,7 +42,7 @@
 		<key>className</key>
 		<string>SMFourViewController</string>
 		<key>navigationItemTitle</key>
-		<string>FOUR</string>
+		<string>乐趣</string>
 		<key>tabBarItemTitle</key>
 		<string>乐趣</string>
 		<key>tabBarItemNormalImageName</key>
@@ -54,7 +54,7 @@
 		<key>className</key>
 		<string>SMFiveViewController</string>
 		<key>navigationItemTitle</key>
-		<string>FIVE</string>
+		<string>我的</string>
 		<key>tabBarItemTitle</key>
 		<string>我的</string>
 		<key>tabBarItemNormalImageName</key>
