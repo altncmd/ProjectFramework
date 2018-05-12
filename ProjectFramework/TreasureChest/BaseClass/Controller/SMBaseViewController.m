@@ -21,14 +21,14 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = HexColor(@"F5F5F5");
     
-    self.layoutReferenceView = [[UIView alloc] init];
-    self.layoutReferenceView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:self.layoutReferenceView];
-    
     _bgImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
     NSString *imageName = IS_IPHONEX ? @"iPhoneX_Bg02" : @"iPhone_Bg02";
     _bgImageView.image = kImage(imageName);
     [self.view addSubview:_bgImageView];
+    
+    self.layoutReferenceView = [[UIView alloc] init];
+    self.layoutReferenceView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:self.layoutReferenceView];
 }
 
 - (void)viewDidLayoutSubviews {
